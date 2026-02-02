@@ -54,9 +54,9 @@ This project adds a lightweight CS layer to the **Account** object:
 
 ---
 
-## Flow logic (step-by-step)
+## Flow logic 
 **Trigger:** Opportunity is updated and Stage changes to **Closed Won**
-
+![](onboarding_flows_automation)
 ### 1) Fetch Account
 - Get Account by `{!$Record.AccountId}`
 
@@ -78,12 +78,13 @@ This project adds a lightweight CS layer to the **Account** object:
 - If it exists → skip
 - If not → create it
 
-### 5) Create onboarding tasks (milestones)
+### 5) Create onboarding tasks 
 Example tasks:
 - `CS Kickoff Call` (Due +2 days)
 - `Provision Access / Verify Rosters` (Due +5 days)
 - `Admin + Educator Training Session` (Due +10 days)
 - `30-Day Adoption Check-in` (Due +30 days)
+![kickoff pic](kickoff_task_check)
 ---
 
 ## Edge cases handled
